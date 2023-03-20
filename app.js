@@ -9,3 +9,8 @@ app.use('/', (req, res) => {
     console.log(req);
     res.status(200).send({name: "yousef"});
 })
+
+app.use('/404', (req, res) => {
+    console.log('404');
+    res.status(200).send("404 Page not found!");
+})
