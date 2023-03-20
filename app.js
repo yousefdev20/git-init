@@ -1,5 +1,4 @@
-const express = require('express');
-const app = express();
+const app = require('./src/app/bootstrap')
 
 app.listen(3000, () => {
     console.log(`Application up in running on this port ${3000}`);
